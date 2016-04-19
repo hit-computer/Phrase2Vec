@@ -104,7 +104,7 @@ class Data:
         for doc in cls.wd_index_list:
             print doc
 
-class Updata:
+class Updata: #该版本尚未使用Adam参数更新方法
     def __init__(self, param):
         #self.i = np.float32(0.)
         self.m = np.float32(param * 0.)
@@ -230,7 +230,7 @@ if __name__ == '__main__':
     cPickle.dump(items_emb_dict, open(args.output+'.pkl', 'wb'))
     
     
-    #----------------------------TEST--------------------------------
+    #----------------------------TEST--------------------------------#
     """
     word = u'china'
     idx = Data.get_index(word)
