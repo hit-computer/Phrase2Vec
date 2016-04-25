@@ -16,4 +16,8 @@
 
     python Phrase2vec.py [训练语料]
 
+若机器上有GPU，可以使用GPU进行训练，速度比CPU能快很多，输入命令改为：
+
+    THEANO_FLAGS='mode=FAST_RUN,device=gpu,floatX=float32' python Phrase2vec.py [训练语料]
+
 训练语料可以选用word2vec的测试语料，[text8.zip](http://mattmahoney.net/dc/text8.zip)
