@@ -22,6 +22,6 @@
 
 训练语料可以选用word2vec的测试语料，[text8.zip](http://mattmahoney.net/dc/text8.zip)
 
+###实验结果
 用word2vec提供的测试语料训练我们的phrase2vec模型，利用余弦相似度计算词（短语）之间的相似度，以下是与“hong kong”相似的词语：
-
-    singapore, beijing, taiwan, shanghai, south africa, of hong, antrim, new zealand, calcutta, in dublin, warwickshire, south korea, germany s, auckland adrift, el salvador, new jersey, ferdinando, in Sweden, woolwich, yangon
+>singapore, beijing, taiwan, shanghai, south africa, of hong, antrim, new zealand, calcutta, in dublin, warwickshire, south korea, germany s, auckland adrift, el salvador, new jersey, ferdinando, in Sweden, woolwich, yangon
