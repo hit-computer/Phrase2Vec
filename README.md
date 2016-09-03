@@ -9,11 +9,13 @@
 - window：上下文窗口大小
 - lr：学习率
 - neg-sample：负采样词（短语）数目
-- max-num-epochs：迭代次数
-- save-epochs：每迭代多少次保存一下模型
 - （前面这五个参数和Word2Vec差不多，这里还有另外两个不一样的参数）
 - min-pf：短语频率，高于该频率的bi-gram将被认为是一个短语
 - margin：正负例的间距
+- （还有额外三个参数）
+- max-num-epochs：迭代次数
+- save-epochs：每迭代多少次保存一下模型
+- output：保存模型的文件名
 
 模型训练，在命令行输入：
 
