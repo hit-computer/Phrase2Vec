@@ -1,8 +1,8 @@
 # Phrase2Vec
 本模型参考了Miklov的Word2Vec，依旧采用上下文预测当前词（短语）来训练词（短语）向量。我们同时训练词向量和短语向量，得到词和短语在同一个向量空间里的表示，模型的具体细节内容参见我的博客[PHRASE2VEC——短语向量学习](http://glacier.iego.net/phrase2vec/)。
 
-===========================================
-###模型参数
+
+## 模型参数
 模型各个参数介绍如下：
 - size：词（短语）向量的维度
 - min-wf：最小词频，词频低于该值的词将被忽略
@@ -27,6 +27,6 @@
 
 训练语料可以选用word2vec的测试语料，[text8.zip](http://mattmahoney.net/dc/text8.zip)
 
-###实验结果
+## 实验结果
 用word2vec提供的测试语料训练我们的phrase2vec模型（GPU配置：Tesla K40m，迭代一轮所需时间：大约30h），利用余弦相似度计算词（短语）之间的相似度，以下是与“hong kong”相似的词语：
 >singapore, beijing, taiwan, shanghai, south africa, of hong, antrim, new zealand, calcutta, in dublin, warwickshire, south korea, germany s, auckland adrift, el salvador, new jersey, ferdinando, in Sweden, woolwich, yangon
